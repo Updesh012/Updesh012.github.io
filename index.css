@@ -5,93 +5,45 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* ******************************navbar part************************************************* */
-#navbar{
-
-    border: 1px solid red;
-    height: 70px;
-    background-color: rgb(19, 19, 146);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* position: fixed; */
-    /* top: 0px; */
-    position:sticky;
-    top: 0px;
-    margin-bottom: 100px;
+.header{
+    height: 10vh;
 }
 
-#navbar > #leftNavbar{
+.navbar-style{
 
-    width: 50%;
-    border:  1px solid black;
-    display: flex;
-    justify-content:space-evenly;
-    
-    height: 50px;
-    margin-left: 50%;
-    margin-top: 10px;
-    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 1px solid black; */
     
 
 }
+.header{
+    /* position: static; */
+    /* border: 1px solid blue; */
+}
 
-#navbar > #leftNavbar > div{
+.logo{
 
-    border:  1px solid red;
-    /* margin: 5px 40px 5px 30px; */
-    font-size: 25px;
-    color: white;
+    height: 65px;
+    padding: 2px 10px;
+
+
+}
+.icon-bar{
+
+    background: black;
+
+}
+#navbar> ul> li > a{
+    font-size: 27px;
+    padding-top: 20px;
+    padding-right: 45px;
+    color: black;
+}
+#navbar> ul> li > a:hover{
+    color: red;
     cursor: pointer;
-    
-
 }
 
-#navbar > #leftNavbar > div > a{
-    text-decoration-line: none;
-    
-    color: white;
-}
-
-#navbar > #leftNavbar > div > a > p:hover{
-    color: rgb(237, 38, 38);
-}
-
-/* *************************for tablet ********************** */
-
-@media all and (min-width : 768px ) and (max-width : 1023px){
-    
-    #navbar > #leftNavbar > div{
-        /* margin: auto; */
-    }
-
-    #navbar > #leftNavbar{
-        /* margin-left: 100px; */
-        padding-left: 100px;
-        width: 60%;
-        margin: auto;
-        margin-top: 10px;
-        justify-content:space-evenly;
-    }
-    
-}
- 
-/* *******************for mobile******************************** */
-
-@media all and (min-width : 320px ) and (max-width : 767px){
-
-    #navbar > #leftNavbar{
-
-        margin-left: 0%;
-        width: 100%;
-    }
-
-    #navbar > #leftNavbar > div{
-
-        font-size: 20px;
-        font-weight: 400;
-        padding-top: 10px;
-    }
-
-
-}
 
 
 /* ******************************end of navbar part************************************************* */
@@ -101,6 +53,7 @@
     border: 1px solid red;
     width: 100%;
     /* height: 1000px; */
+    margin-top: 180px;
 }
 
 #aboutMe > #photo{
@@ -445,7 +398,7 @@
 
 /* *********************for tablet**************************** */
 
-@media all and (min-width : 768px ) and (max-width : 1023px){
+@media all and (min-width : 768px ) and (max-width : 1026px){
 
     #frontEnd > div{
 
@@ -507,27 +460,100 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
+/* *****************************Project part started******************************* */
 
 
 #projects{
     border: 1px solid red;
-    width: 100px;
+    width: 100%;
     height: 1000px;
+    padding-top: 100px;
+    margin-top: 100px;
+    
+
+
+}
+#projects > p{
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
 }
 
+#projectDiv{
+
+    width: 80%;
+    margin: 100px 10% 0px 10%;
+    border: 1px solid green;
+    display: flex;
+    padding: 20px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 
+}
+
+#projectDiv > #image{
+
+    width: 50%;
+    
+    border: 1px solid black;
+    
+
+}
+#image > img{
+    width: 100%;
+    height: 100%;
+}
+#image > img:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition-duration: 0.3s;
+}
+
+#projectDiv > #details{
+
+    margin-left: 3%;
+    width: 47%;
+    border: 1px solid black;
+
+}
+#details > hr{
+    border: 2px solid red;
+}
+
+#title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#aboutweb{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 440;
+
+}
+
+#days{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 440;
+}
+
+#tech{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 440;
+}
+#links{
+    border: 1px solid red;
+    display: flex;
+}
+#links > div{
+
+    width: 60px;
+    height: 50px;
+    border: 1px solid black;
 
 
+}
 
 
