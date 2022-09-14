@@ -6,6 +6,10 @@
     /* background-color: lightgray; */
 }
 /* ******************************navbar part************************************************* */
+html {
+    scroll-behavior: smooth;
+  }
+
 .header{
     height: 10vh;
 }
