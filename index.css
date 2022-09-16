@@ -306,7 +306,7 @@ html {
     font-size: 35px;
     font-weight: 700;
     color: rgb(85, 85, 251);
-
+    /* color: red; */
     /* border: 1px solid black; */
 
 }
@@ -316,6 +316,7 @@ html {
     height: 310px;
     margin: 80px 10%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* background-color: rgb(39, 36, 36); */
 }
 
 #frontEnd > div{
@@ -328,19 +329,25 @@ html {
     grid-template-rows: 200px;
     column-gap: 100px;
     /* margin-left: 30%; */
+    
     padding-left: 13%;
     margin-top: 20px;
-
+    /* cursor: pointer; */
 }
 
 #frontEnd > div > div{
     /* border: 1px solid red; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    
+    background-color: white;
+    transition-duration: 1.2s;
 
 }
-#frontEnd > div > div :hover{
+
+#frontEnd > div > :hover{
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    /* cursor: pointer; */
+    transform: scale(0.87);
+    
 }
 
 
@@ -377,6 +384,7 @@ html {
     margin: 0px 10%;
     border: 1px solid transparent;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* background-color: rgb(39, 36, 36); */
 
 
 }
@@ -384,6 +392,7 @@ html {
 #backend > p{
     font-size: 35px;
     font-weight: 600;
+    color: black;
 }
 
 #backend > hr{
@@ -407,8 +416,15 @@ html {
 #backend > div > div{
     border: 1px solid transparent;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: white;
+    
+    transition-duration: 1.2s;
 
 }
+#backend > div > div:hover{
+    transform: scale(0.87);
+}
+
 
 #backend > div > div >img{
     width: 100%;
@@ -515,18 +531,25 @@ html {
     padding: 20px;
     /* height: 400px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    color: white;
+    background-color: #222222;
+    
 
 }
 
 #projectDiv > #image{
 
     width: 50%;
+    transition-duration: 1.2s;
     
     /* border: 1px solid black; */
     
 
 }
+#projectDiv > #image:hover{
+    transform: scale(0.95);
+}
+
 #image > img{
     width: 100%;
     height: 100%;
@@ -576,13 +599,13 @@ html {
     display: flex;
     padding-left: 15px;
 }
-#links > div:first-child{
+#links > a >div:first-child{
 
     width: 80px;
     margin-right: 15px;
 
 }
-#links > div{
+#links > a >div{
     height: 30px;
     /* border: 1px solid black; */
     font-size: 20px;
@@ -590,25 +613,30 @@ html {
     background-color: aqua;
     color: black;
 }
-#links > div:last-child{
+#links >a> div:last-child{
 
 width: 120px;
 
 }
 
 
-#links > div:hover{
-    background-color: black;
+#links >a> div:hover{
+    background-color: white;
+    color: black;
 
 } 
 
-#links > div>a:hover {
+#links >a> div:hover {
 
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    
+}
+#links > a {
+    text-decoration: none;
 }
 
-#links > div > a{
+#links >a> div {
     text-decoration: none;
     color: black;
     
