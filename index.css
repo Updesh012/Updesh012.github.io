@@ -201,7 +201,7 @@ html {
 
 /* *************************for tablet ********************** */
 
-@media all and (min-width : 768px ) and (max-width : 1023px){
+@media all and (min-width : 768px ) and (max-width : 1027px){
     
    
 
@@ -847,6 +847,21 @@ width: 120px;
     }
 
 }
+
+/* git hub calender */
+
+#github{
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 100px;
+}
+
+#github>h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 
 
