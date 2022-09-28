@@ -22,8 +22,7 @@
 <!-- github calender  -->
 <link
 rel="stylesheet"
-href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 
 
 
@@ -162,6 +161,23 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
             
             </div>
 
+            <div id="frontEnd">
+                <p>Soft Skills</p><hr>
+            <div>
+                <div id="time"><img id="timePic" src="https://tse2.mm.bing.net/th?id=OIP.16xnOQzwlN8ktyD_l87A8wHaEc&pid=Api&P=0" alt="">
+                    <p id="manage" style="font-size: 22px;">Time Management</p>
+                </div>
+                <div>
+                    <img style="height: 60%;" src="https://tse2.mm.bing.net/th?id=OIP.qVYd0zAecBCfom7aJ9eePgHaDz&pid=Api&P=0" alt="">
+                    <p style="font-size: 22px;">Problem Solving</p>
+                </div>
+                <div>
+                    <img  style="height: 60%;" src="https://tse3.mm.bing.net/th?id=OIP.RdZs961kmndVxixZ0MP8-QHaGG&pid=Api&P=0" alt="">
+                    <p style="font-size: 22px;">Team Work</p>
+                </div>
+            </div>
+          </div>
+
           
 
 
@@ -231,6 +247,37 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 
         <!-- *******************************Projects********************************************* -->
 
+        <!-- ***********************Statistics********************************************** -->
+
+        <div id="backend" style="margin-bottom: 100px;">
+            <p>Statistics</p><hr>
+            <div>
+
+                <div style=" border:5px solid black;margin: auto;padding: 20px;">
+                   <p style="font-size: 30px;">1200+ </p>
+                   <p style="font-size: 20px;">Coding Hours</p>
+                </div>
+                <div style=" border:5px solid black;margin: auto;padding: 20px;">
+                    <p style="font-size: 30px;">300+ </p>
+                   <p style="font-size: 20px;">DSA Problems</p>
+                </div>
+                <div style=" border:5px solid black;margin: auto;padding: 20px;">
+                    <p style="font-size: 30px;">210+ </p>
+                    <p style="font-size: 20px;">Git Commits</p>
+                </div>
+                <div style=" border:5px solid black;margin: auto;padding: 20px;">
+                    <p style="font-size: 30px;">2 </p>
+                    <p style="font-size: 20px;">Major Projects</p>
+                </div>
+
+            </div>
+
+        
+        </div>
+
+        <!-- ***********************Statistics********************************************** -->
+
+
             <!-- *****************************github-calendar******************************** -->
         <div id="github">
             <h3>My Github Contribution</h3>
@@ -284,10 +331,5 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
     // or enable responsive functionality:
     GitHubCalendar(".calendar", "Updesh012", { responsive: true });
 
-    // Use a proxy
-    GitHubCalendar(".calendar", "Updesh012", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=${username}`)
-       }
-    }).then(r => r.text())
+    
 </script>
