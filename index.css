@@ -11,7 +11,7 @@ html {
   }
 
 .header{
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .navbar-style{
@@ -34,6 +34,9 @@ html {
 
 
 }
+#problem{
+    /* background-color: black; */
+}
 .icon-bar{
 
     background: black;
@@ -44,6 +47,7 @@ html {
     padding-top: 20px;
     padding-right: 45px;
     color: black;
+    /* background-color: black; */
 }
 #navbar> ul> li > a:hover{
     color: red;
@@ -203,7 +207,13 @@ html {
 
 @media all and (min-width : 768px ) and (max-width : 1027px){
     
-   
+    #navbar> ul> li > a{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-right: 45px;
+        color: black;
+        /* background-color: black; */
+    }
 
     #name > div > p:last-child{
    
