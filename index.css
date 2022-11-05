@@ -82,7 +82,7 @@ html {
 
 #aboutMe > #photo > #name{
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
     padding-left: 20px;
     
@@ -541,7 +541,7 @@ html {
         grid-template-columns: 110px 110px ;
         grid-template-rows: 140px 140px;
         row-gap: 30px;
-        border: 1px solid green;
+        /* border: 1px solid green; */
         margin-bottom: -300px;
     }
 
@@ -563,7 +563,7 @@ html {
     }
 
     #backend > div > div > p{
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 600;
         line-height: 50px;
     }
@@ -746,6 +746,30 @@ width: 120px;
 /* ****************mobile************************** */
 
 @media all and (min-width : 320px ) and (max-width : 767px){
+
+    #title{
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    #aboutweb{
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: 440;
+    
+    }
+
+    #tech{
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: 440;
+    }
+    
+    #days{
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: 440;
+    }
 
     #projects{
         /* border: 1px solid red; */
@@ -994,3 +1018,16 @@ width: 120px;
     
 
 }
+
+/* *********************statistics**************************** */
+
+
+
+
+
+
+
+
+
+
+
