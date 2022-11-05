@@ -936,12 +936,12 @@ width: 120px;
 
    
     #det > #email{
-        font-size: 20px;
+        font-size: 18px;
     }
 
 
    #det > #phone{
-    font-size: 20px;
+    font-size: 18px;
    }
     #det > #email > a >img{
 
@@ -968,6 +968,7 @@ width: 120px;
     margin: auto;
     border: 2px solid black;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 #github>h3{
@@ -1021,9 +1022,30 @@ width: 120px;
 
 /* *********************statistics**************************** */
 
+#backend > div >.stat{
+
+    
+    line-height: 30px;
+    vertical-align: middle;
+    padding-top: 30%;
+
+}
 
 
+@media all and (min-width : 320px ) and (max-width : 767px){
 
+    #backend > div >.stat{
+
+    
+        line-height: 16px;
+        vertical-align: middle;
+        padding-top: 30%;
+    
+    }
+    
+
+
+}
 
 
 
