@@ -22,8 +22,7 @@ html {
 
 }
 .header{
-    /* position: static; */
-    /* border: 1px solid blue; */
+   
     background-color: white;
 }
 
@@ -34,9 +33,7 @@ html {
 
 
 }
-#problem{
-    /* background-color: black; */
-}
+
 .icon-bar{
 
     background: black;
@@ -62,19 +59,18 @@ html {
 #aboutMe{
     /* border: 1px solid red; */
     width: 100%;
-    /* height: 1000px; */
-    /* margin-top: 180px; */
+
     padding-top: 180px;
-    /* background-color: gray; */
+    
     
 }
 
 #aboutMe > #photo{
 
-    width: 80%;
+    width: 90%;
     /* border: 1px solid black; */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -368,31 +364,25 @@ html {
 }
 #frontEnd{
     /* border: 1px solid black; */
-    width: 80%;
-    height: 340px;
-    margin: 80px 10%;
+    width: 90%;
+    /* height: 340px; */
+    margin: 80px 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* background-color: rgb(39, 36, 36); */
 }
 
 #frontEnd > div{
 
-    /* border:  1px solid green; */
-    width: 80%;
-    /* height: 100%; */
-    margin: 0px 10%;
-    display: grid;
-    /* justify-content: space-between; */
+   
 
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 200px;
-    column-gap: 100px;
-    /* margin-left: 30%; */
-    
-    padding-left: 5%;
-    
-    margin-top: 0px;
-    /* cursor: pointer; */
+    display: flex;
+    justify-content: space-around;
+    /* margin-bottom: 40px; */
+    padding-bottom: 40px;
+
+
+
+
 }
 
 #frontEnd > div > div{
@@ -400,8 +390,7 @@ html {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     background-color: white;
     transition-duration: 1.2s;
-    /* height: 50%; */
-    /* width: 20%; */
+   
 }
 
 #frontEnd > div > :hover{
@@ -427,8 +416,8 @@ html {
 
 #frontEnd > div > div >img{
 
-    width: 100%;
-    height: 70%;
+    width: 160px;
+    height: 120px;
 
 }
 #frontEnd > div > div > p{
@@ -441,8 +430,9 @@ html {
 #backend{
 
     text-align: center;
-    width: 80%;
-    margin: 0px 10%;
+    width: 90%;
+    /* margin: 0px 5%; */
+    margin: auto;
     border: 1px solid transparent;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* background-color: rgb(39, 36, 36); */
@@ -480,7 +470,10 @@ html {
     background-color: white;
     
     transition-duration: 1.2s;
-
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 #backend > div > div:hover{
     transform: scale(0.87);
@@ -535,14 +528,13 @@ html {
 
     #frontEnd > div{
 
-        padding-left: 1%;
-        column-gap: 30px;
-        margin-top: 30px;
-        grid-template-columns: 110px 110px ;
-        grid-template-rows: 140px 140px;
-        row-gap: 30px;
-        /* border: 1px solid green; */
-        margin-bottom: -300px;
+       
+        flex-direction: column;
+      
+    }
+
+    #frontEnd{
+        margin-bottom: 100px;
     }
 
     #backend > div{
@@ -565,17 +557,14 @@ html {
     #backend > div > div > p{
         font-size: 18px;
         font-weight: 600;
-        line-height: 50px;
+        /* line-height: 50px; */
     }
 
     #frontEnd{
 
-        height: 460px;
+        /* height: 460px; */
 
     }
-
-
-
 
 }
 
@@ -585,7 +574,7 @@ html {
 #projects{
     /* border: 1px solid red; */
     width: 100%;
-    /* height: 1000px; */
+    
     padding-top: 100px;
     margin-top: 100px;
     margin-bottom: 150px;
@@ -602,11 +591,13 @@ html {
 
 #projectDiv{
 
-    width: 80%;
+    width: 90%;
     margin: 100px 10% 0px 10%;
     /* border: 1px solid green; */
     display: flex;
     padding: 20px;
+    /* margin: auto; */
+    margin: 100px 5%;
     /* height: 400px; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: white;
@@ -838,7 +829,7 @@ width: 120px;
 #det > #email{
 
     border: 1px solid transparent;
-    font-size: 30px;
+    font-size: 27px;
     color: white;
 
 
@@ -899,6 +890,8 @@ width: 120px;
         margin-left: 18%;
         margin-right: 12%;
     }
+
+  
 
 }
 
@@ -964,10 +957,10 @@ width: 120px;
 /* git hub calender */
 
 #github{
-    width: 80%;
+    width: 90%;
     margin: auto;
     border: 2px solid black;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     text-align: center;
 }
 
@@ -976,49 +969,14 @@ width: 120px;
     margin-bottom: 20px;
 }
 
+#stats{
+    
+    text-align: center;
+    margin-bottom: 100px;
+}
 
 /* ****************************************************************************** */
 
-#time{
-    height: 100%;
-}
-#time > #timePic{
-    height: 60%;
-}
-#time > #manage{
-    font-size: 23px;
-    
-}
-
-#solve> #problem{
-    font-size: 23px;
-    /* color: red; */
-}
-
-#work > #team{
-    font-size: 23px;
-    line-height: 55px;
-}
-
-@media all and (min-width : 320px ) and (max-width : 767px){
-
-    #time > #manage{
-        font-size: 17px;
-        
-    }
-    
-    #solve> #problem{
-        font-size: 18px;
-        /* color: red; */
-    }
-    
-    #work > #team{
-        font-size: 18px;
-
-    }
-    
-
-}
 
 /* *********************statistics**************************** */
 
@@ -1027,9 +985,21 @@ width: 120px;
     
     line-height: 30px;
     vertical-align: middle;
-    padding-top: 30%;
+    /* padding-top: 30%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
 
 }
+.stat  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 
 
 @media all and (min-width : 320px ) and (max-width : 767px){
@@ -1037,7 +1007,7 @@ width: 120px;
     #backend > div >.stat{
 
     
-        line-height: 16px;
+        /* line-height: 16px; */
         vertical-align: middle;
         padding-top: 30%;
     
@@ -1047,9 +1017,31 @@ width: 120px;
 
 }
 
+#frontEnd .softSkill{
+    font-size: 26px;
+}
+
+#frontEnd > div > div{
+    padding: 5px;
+}
 
 
+@media all and (min-width : 768px ) and (max-width : 1023px){
+    #frontEnd .softSkill{
+        font-size: 20px;
+    }
+    
+}
 
+@media all and (min-width : 320px ) and (max-width : 767px){
+    #frontEnd .softSkill{
+        font-size: 26px;
+    }
 
+ #stats > img{
+    width: 80%;
+ }
+    
+}
 
 

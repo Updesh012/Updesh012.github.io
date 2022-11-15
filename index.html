@@ -70,7 +70,10 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
                            
                         </li>
                         <li>
-                            <a href="Updesh_Resume.pdf" download="">Resume</a>
+                            <a id="newpage"
+                            target="_blank"
+                            
+                             href="Updesh_Resume.pdf" download="">Resume</a>
                            
                         </li>
     
@@ -97,7 +100,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
                     
                     <p class="n">Java Backend Developer</p>
 
-                    <div id="r"><a href="Updesh_Resume.pdf" download=""><button id="resume">Resume</button></a></div>
+                    <div id="r"><a id="newpage2" href="Updesh_Resume.pdf" download=""><button id="resume">Resume</button></a></div>
                     <!-- <div id="r"><a href="Updesh_Resume.pdf" download=""><button id="resume">Resume</button></a></div> -->
                 </div>
                 <div id="pic">
@@ -144,7 +147,7 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
                 <p>Back-End</p><hr>
                 <div>
 
-                    <div>
+                    <div >
                         <img src="https://tse3.mm.bing.net/th?id=OIP.njFSSwlk4CUH6-59lnUadgAAAA&pid=Api&P=0" alt="">
                         <p>Java</p>
                     </div>
@@ -169,16 +172,16 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
             <div id="frontEnd">
                 <p>Soft Skills</p><hr>
             <div>
-                <div id="time"><img id="timePic" src="https://tse2.mm.bing.net/th?id=OIP.16xnOQzwlN8ktyD_l87A8wHaEc&pid=Api&P=0" alt="">
-                    <p id="manage">Time Management</p>
+                <div ><img  src="https://tse2.mm.bing.net/th?id=OIP.16xnOQzwlN8ktyD_l87A8wHaEc&pid=Api&P=0" alt="">
+                    <p class="softSkill">Time Management</p>
                 </div>
-                <div id="solve">
-                    <img style="height: 60%;" src="https://tse2.mm.bing.net/th?id=OIP.qVYd0zAecBCfom7aJ9eePgHaDz&pid=Api&P=0" alt="">
-                    <p id="problem">Problem Solving</p>
+                <div >
+                    <img  src="https://tse2.mm.bing.net/th?id=OIP.qVYd0zAecBCfom7aJ9eePgHaDz&pid=Api&P=0" alt="">
+                    <p  class="softSkill">Problem Solving</p>
                 </div>
-                <div id="work">
-                    <img  style="height: 60%;" src="https://tse3.mm.bing.net/th?id=OIP.RdZs961kmndVxixZ0MP8-QHaGG&pid=Api&P=0" alt="">
-                    <p id="team">Team Work</p>
+                <div >
+                    <img   src="https://tse3.mm.bing.net/th?id=OIP.RdZs961kmndVxixZ0MP8-QHaGG&pid=Api&P=0" alt="">
+                    <p  class="softSkill">Team Work</p>
                 </div>
             </div>
           </div>
@@ -291,9 +294,13 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
                 My Github Contribution
             </div>
 
-             <img src="https://github-readme-streak-stats.herokuapp.com/?user=Updesh012&theme=radical" width="48%" />
+             
 
         </div>   
+        <div id="stats">
+
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=Updesh012&theme=radical" />
+        </div>
        
 
             <!-- *****************************github-calendar******************************** -->
@@ -332,16 +339,22 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 </body>
 </html>
 <script>
-    // GitHubCalendar(".calendar", "Updesh012");
-
-    // or enable responsive functionality:
+    
     GitHubCalendar(".calendar", "Updesh012", { responsive: true });
 
-//     // Use a proxy
-//   GitHubCalendar(".calendar", "Updesh012", {
-//      proxy (Updesh012) {
-//        return fetch(`https://your-proxy.com/github?user=${Updesh012}`)
-//      }
-//   }).then(r => r.text())
-  
+
+
+
+document.getElementById("newpage").addEventListener("click",() => {
+
+    window.open("https://drive.google.com/file/d/1eS2LBGTSMnXLJDkQ0ob8OM36Xq9wKjCZ/view?usp=sharing",'_blank')
+
+})
+
+document.getElementById("newpage2").addEventListener("click",() => {
+
+window.open("https://drive.google.com/file/d/1eS2LBGTSMnXLJDkQ0ob8OM36Xq9wKjCZ/view?usp=sharing",'_blank')
+
+})
+
 </script>
