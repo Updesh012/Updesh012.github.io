@@ -27,16 +27,4 @@ const observer = new IntersectionObserver((entries)=>{
 const hiddenElement = document.querySelectorAll(".hidden");
 hiddenElement.forEach((element)=> observer.observe(element));
 
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "Updesh012", { responsive: true });
-
-  
-
-let resumeSec = document.querySelectorAll(".drive")
-resumeSec.forEach((el)=> el.addEventListener("click",()=>{
-    window.open(
-        'https://drive.google.com/file/d/1iRW8t7hbsTLrt_S5dZvj2l_PStztDJLF/view?usp=sharing',
-        '_blank'
-      );
-})) 
-
+// Resume download is handled by the HTML href attribute directly

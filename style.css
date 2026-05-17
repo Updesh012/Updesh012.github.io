@@ -345,62 +345,104 @@ a{
     margin-bottom: -10px;
 }
 
-/* #js{
-    width: 90%;
-    margin-bottom: 40px;
+/* ===== EXPERIENCE SECTION ===== */
+.experience {
+    background-color: #ffffff;
+    padding: 80px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#html{
-    width: 50%;
-    margin-bottom: 40px;
-}
-
-#css{
-    width: 50%;
-    margin-bottom: 40px;
-}
-
-
-
-#spring{
-    margin-top: 20px;
-    margin-bottom: 70px;
-} */
-.education{
-    width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: #fed942;
-}
-
-#githubstats{
-    margin-bottom: 30px;
-}
-.education>h1{
+.experience > h1 {
     text-align: center;
-}
-.calendar{
-    width: 90%;
-    border: none;
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 
-.stats{
+.experience-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.experience-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 35px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+    margin-bottom: 30px;
+    border-left: 5px solid #000000;
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px;
+}
+
+.experience-header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  .stats>img{
-    max-width: 100%;
-    height: auto;
-  }
-
-  text.ContributionCalendar-label {
-    fill: rgb(0, 0, 0);
-    font-size: 13px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
+.experience-title h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.experience-title h3 {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.experience-date span {
+    background: #000000;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.experience-details {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-details li {
+    position: relative;
+    padding: 8px 0 8px 25px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.experience-details li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    top: 7px;
+}
+
+.experience-details li:hover {
+    color: #000;
+}
+
+/* ===== END EXPERIENCE SECTION ===== */
+
+/* Override the .hidden yellow background for experience cards */
+.experience-card.hidden {
+    background-color: #f9f9f9;
+}
 
 
 .projects{
@@ -754,10 +796,6 @@ a{
         margin-bottom: 50px;
     }
 
-    /* .calendar svg{
-       max-width: 100%;
-    } */
-
     .grl{
         margin: auto;
     }
@@ -768,9 +806,18 @@ a{
         margin: auto;
       }
 
-      .calendar svg{
-        max-width: 100%;
-      }
+    /* Experience responsive */
+    .experience-card {
+        padding: 25px 20px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .experience-details li {
+        font-size: 0.9rem;
+    }
   
 }
 
@@ -877,14 +924,28 @@ a{
     font-size: 12px;
   }
 
-  .calendar svg{
-    max-width: 100%;
-  }
-
   #form-container{
     /* border: 2px solid #AAABAB; */
     width: 90%;
     margin: auto;
+  }
+
+  /* Experience responsive small */
+  .experience-card {
+      padding: 20px 15px;
+  }
+
+  .experience-title h2 {
+      font-size: 1.2rem;
+  }
+
+  .experience-title h3 {
+      font-size: 0.95rem;
+  }
+
+  .experience-details li {
+      font-size: 0.8rem;
+      padding: 6px 0 6px 20px;
   }
 
 }
